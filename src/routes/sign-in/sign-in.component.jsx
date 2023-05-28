@@ -1,7 +1,7 @@
-/*import {
+import {
     signInWithGooglePopup,
     createUserProfileDocument,
-} from '../../utils/firebase/firebase.utils';  
+} from '../../utils/firebase/firebase.utils';
 
 const SignIn = () => {
     const logGoogleUser = async () => {
@@ -15,17 +15,9 @@ const SignIn = () => {
             <button onClick={logGoogleUser}>Sign in with Google Popup</button>
         </div>
     );
-}; */
-
-const SignIn = () => {
-
-    return (
-        <div>
-            <h1>Sign In Page</h1>
-
-        </div>
-    );
 };
+
+
 
 
 export default SignIn;
