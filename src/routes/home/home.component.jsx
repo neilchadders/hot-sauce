@@ -6,7 +6,7 @@ const Home = () => {
     const categories = [
         {
             "id": 1,
-            "title": "Scoth Bonnet",
+            "title": "Scotch Bonnet",
             "imageUrl": "https://images.unsplash.com/photo-1640621455083-2c8bf90f89f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhhYmFuZXJvfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60"
         },
         {
