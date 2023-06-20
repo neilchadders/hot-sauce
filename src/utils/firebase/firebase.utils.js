@@ -21,12 +21,12 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBL8J_DC3LevsTiAWvpmkrrZI4JFmivsRU",
-    authDomain: "hot-sauce-8b18f.firebaseapp.com",
-    projectId: "hot-sauce-8b18f",
-    storageBucket: "hot-sauce-8b18f.appspot.com",
-    messagingSenderId: "324465078743",
-    appId: "1:324465078743:web:93ab847359d61c72cfdb92"
+    apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
+    authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
+    projectId: 'crwn-clothing-db-98d4d',
+    storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
+    messagingSenderId: '626766232035',
+    appId: '1:626766232035:web:506621582dab103a4d08d6',
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -120,14 +120,3 @@ export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback) =>
     onAuthStateChanged(auth, callback);
-/* 
-
-const firebaseConfig = {
-    apiKey: "AIzaSyBL8J_DC3LevsTiAWvpmkrrZI4JFmivsRU",
-    authDomain: "hot-sauce-8b18f.firebaseapp.com",
-    projectId: "hot-sauce-8b18f",
-    storageBucket: "hot-sauce-8b18f.appspot.com",
-    messagingSenderId: "324465078743",
-    appId: "1:324465078743:web:93ab847359d61c72cfdb92"
-};
-*/
