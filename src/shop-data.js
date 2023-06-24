@@ -1,6 +1,6 @@
 const SHOP_DATA = [
   {
-    title: 'Scotch Bonnett',
+    title: 'Hats',
     items: [
       {
         id: 1,
@@ -59,7 +59,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: 'Birds  Eye',
+    title: 'Sneakers',
     items: [
       {
         id: 10,
@@ -112,7 +112,8 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: 'Habanero',
+    id: 3,
+    title: 'Jackets',
     items: [
       {
         id: 18,
@@ -147,7 +148,8 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: 'Jalapeno',
+    id: 4,
+    title: 'Womens',
     items: [
       {
         id: 23,
@@ -194,7 +196,8 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: 'Sweet',
+    id: 5,
+    title: 'Mens',
     items: [
       {
         id: 30,
@@ -236,4 +239,4 @@ const SHOP_DATA = [
   },
 ];
 
-export default SHOP_DATA
+export default SHOP_DATA;
