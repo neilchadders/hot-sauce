@@ -13,11 +13,11 @@ import {
     getFirestore,
     doc,
     getDoc,
+    getDocs,
     setDoc,
     collection,
     writeBatch,
     query,
-    getDocs,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -47,11 +47,10 @@ export const db = getFirestore();
 
 export const addCollectionAndDocuments = async (
     collectionKey,
-    objectsToAdd,
-    field
+    objectsToAdd
 ) => {
-    const collectionRef = collection(db, collectionKey);
     const batch = writeBatch(db);
+    const collectionRef = collection(db, collectionKey);
 
     objectsToAdd.forEach((object) => {
         const docRef = doc(collectionRef, object.title.toLowerCase());
@@ -63,7 +62,7 @@ export const addCollectionAndDocuments = async (
 };
 
 export const getCategoriesAndDocuments = async () => {
-    const collectionRef = collection(db, 'categories');
+    const collectionRef = collection(db, 'collections');
     const q = query(collectionRef);
 
     const querySnapshot = await getDocs(q);
@@ -121,3 +120,15 @@ export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback) =>
     onAuthStateChanged(auth, callback);
+
+
+
+
+/* const firebaseConfig = {
+     apiKey: "AIzaSyBL8J_DC3LevsTiAWvpmkrrZI4JFmivsRU",
+     authDomain: "hot-sauce-8b18f.firebaseapp.com",
+     projectId: "hot-sauce-8b18f",
+     storageBucket: "hot-sauce-8b18f.appspot.com",
+     messagingSenderId: "324465078743",
+     appId: "1:324465078743:web:93ab847359d61c72cfdb92"
+   }; */
