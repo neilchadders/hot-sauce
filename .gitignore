@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/routes/sign-in/sign-in.component.jsx
+
+# Local Netlify folder
+.netlify
