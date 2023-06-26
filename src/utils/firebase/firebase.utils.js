@@ -21,12 +21,13 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBL8J_DC3LevsTiAWvpmkrrZI4JFmivsRU",
-    authDomain: "hot-sauce-8b18f.firebaseapp.com",
-    projectId: "hot-sauce-8b18f",
-    storageBucket: "hot-sauce-8b18f.appspot.com",
-    messagingSenderId: "324465078743",
-    appId: "1:324465078743:web:93ab847359d61c72cfdb92"
+    apiKey: "AIzaSyD4cpf6I1AazYWALuH22e0yMYlntgXoJU4",
+    authDomain: "add-categories.firebaseapp.com",
+    projectId: "add-categories",
+    storageBucket: "add-categories.appspot.com",
+    messagingSenderId: "806289093698",
+    appId: "1:806289093698:web:080f5ff8478389ee78e9db",
+    measurementId: "G-XYE0B8PK6N"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
