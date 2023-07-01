@@ -1,3 +1,20 @@
 {
-	"siteId": "eefa034a-70e8-4628-9a5c-f6b1273709c6"
+	"siteId": "eefa034a-70e8-4628-9a5c-f6b1273709c6",
+	"geolocation": {
+		"data": {
+			"city": "Bradford",
+			"country": {
+				"code": "GB",
+				"name": "United Kingdom"
+			},
+			"subdivision": {
+				"code": "ENG",
+				"name": "England"
+			},
+			"timezone": "Europe/London",
+			"latitude": 53.7981,
+			"longitude": -1.7623
+		},
+		"timestamp": 1688237254212
+	}
 }
