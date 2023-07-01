@@ -9,7 +9,7 @@ import { CartProvider } from './contexts/cart.context';
 import { Elements } from '@stripe/react-stripe-js'
 
 import './index.scss';
-import { stripePromise } from './utils/stripe/stripe.utls'
+import { stripePromise } from './utils/stripe/stripe.utils'
 
 const rootElement = document.getElementById('root');
 
