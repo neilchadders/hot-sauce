@@ -13,7 +13,7 @@ const PaymentForm = () => {
     const stripe = useStripe();
     const elements = useElements();
 
-    //const [isProcessingPayment, setIsProcessingPayment] = useState(false);
+
 
     const paymentHandler = async (e) => {
         e.preventDefault();
@@ -29,8 +29,30 @@ const PaymentForm = () => {
             body: JSON.stringify({ amount: 1000 }),
         }).then((res) => res.json());
 
-        console.log(response)
+        const {
+            paymentIntent: { client_secret },
 
+        } = response;
+
+
+        const clientSecret = response.paymentIntent.client_secret;
+
+        const paymentResult = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: elements.getElement(CardElement),
+                billing_details: {
+                    name: 'Neil Chadwick'
+                },
+            },
+        });
+
+        if (paymentResult.error) {
+            alert(paymentResult.error.message);
+        } else {
+            if (paymentResult.paymentIntent.status === 'succeeded') {
+                alert('Payment Successful!');
+            }
+        }
     };
 
 
